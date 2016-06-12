@@ -1,0 +1,20 @@
+.viewFramework{
+  &-sidebar{
+    position: fixed;
+    width: 200px;
+    top: $topbar-height;
+    bottom: 0;
+    background-color: #222222;
+    z-index: 100;
+  }
+}
+
+.sidebar{
+
+  &-fold{
+    color: #99cfe7;
+    text-align: center;
+    background-color: #111111;
+    cursor: pointer;
+  }
+}

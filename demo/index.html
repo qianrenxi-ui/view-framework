@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="demo">
+<head>
+    <meta charset="UTF-8">
+    <title>View Framework Demo</title>
+    <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.css"/>
+    <link rel="stylesheet" href="/bower_components/font-awesome/css/font-awesome.css"/>
+    <link rel="stylesheet" href="/styles/main.css"/>
+</head>
+<body>
+<qui-view-framework></qui-view-framework>
+<div ng-controller="AlterDemoCtrl">
+    <uib-alert type="info" close="close()">Well done! You successfully loaded the code.</uib-alert>
+    <uib-alert type="danger" close="close()">Well done! You successfully loaded the code.</uib-alert>
+    <uib-alert type="success" close="close()">Well done! You successfully loaded the code.</uib-alert>
+</div>
+
+<script src="/bower_components/angular/angular.js"></script>
+<script src="/bower_components/angular-animate/angular-animate.js"></script>
+<script src="/bower_components/angular-bootstrap/ui-bootstrap.js"></script>
+<script src="/bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+
+<script src="/scripts/main.js"></script>
+<script>
+    angular.module('demo', ['ui.bootstrap', 'qui.viewFramework'])
+            .controller('AlterDemoCtrl', function () {
+
+            });
+</script>
+</body>
+</html>
