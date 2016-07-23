@@ -15,8 +15,12 @@ html, body {
     z-index: 100; }
   .viewFramework-sidebar-full .viewFramework-sidebar {
     width: 200px; }
+  .viewFramework-sidebar-full .viewFramework-workspace {
+    left: 200px; }
   .viewFramework-sidebar-mini .viewFramework-sidebar {
     width: 50px; }
+  .viewFramework-sidebar-mini .viewFramework-workspace {
+    left: 50px; }
 
 .viewFramework-topbar, .viewFramework .topbar {
   position: fixed;
@@ -27,11 +31,12 @@ html, body {
   z-index: 100; }
 
 .viewFramework-sidebar {
-  position: fixed;
-  width: 200px;
-  top: 50px;
+  position: absolute;
+  width: 0;
+  top: 0;
   bottom: 0;
   background-color: #222222;
+  overflow: hidden;
   z-index: 100; }
 
 .sidebar-fold {
@@ -39,3 +44,35 @@ html, body {
   text-align: center;
   background-color: #111111;
   cursor: pointer; }
+
+.viewFramework-workspace {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0; }
+
+.workspace {
+  display: flex;
+  flex: 1;
+  flex-direction: row; }
+  .workspace .sidebar {
+    position: relative;
+    width: 160px;
+    background-color: #EEEEEE;
+    border-right: 1px solid #DDDDDD; }
+    .workspace .sidebar-inner {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0; }
+    .workspace .sidebar .col-resize-handle {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: -4px;
+      width: 8px;
+      cursor: col-resize;
+      z-index: 3; }
+  .workspace .main {
+    flex: 1; }

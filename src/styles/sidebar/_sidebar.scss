@@ -1,17 +1,18 @@
-.viewFramework{
-  &-sidebar{
-    position: fixed;
-    width: 200px;
-    top: $topbar-height;
+.viewFramework {
+  &-sidebar {
+    position: absolute;
+    width: 0;
+    top: 0;
     bottom: 0;
     background-color: #222222;
+    overflow: hidden;
     z-index: 100;
   }
 }
 
-.sidebar{
+.sidebar {
 
-  &-fold{
+  &-fold {
     color: #99cfe7;
     text-align: center;
     background-color: #111111;

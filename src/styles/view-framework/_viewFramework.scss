@@ -22,10 +22,16 @@ html, body {
     .viewFramework-sidebar{
       width: $sidebar-width;
     }
+    .viewFramework-workspace{
+      left: $sidebar-width;
+    }
   }
   &-sidebar-mini{
     .viewFramework-sidebar{
       width: $sidebar-width-mini;
+    }
+    .viewFramework-workspace{
+      left: $sidebar-width-mini;
     }
   }
   &-topbar-hide{}

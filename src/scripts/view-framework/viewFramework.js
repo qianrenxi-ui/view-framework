@@ -4,14 +4,14 @@
 (function(){
     'use strict';
 
-    angular.module('qui.viewFramework', ['qui.viewFramework.topbar', 'qui.viewFramework.sidebar'])
+    angular.module('qui.viewFramework', ['qui.viewFramework.topbar', 'qui.viewFramework.sidebar','qui.components.resize'])
         .controller('QuiViewFrameworkController', ViewFrameworkController)
         .directive('quiViewFramework', QuiViewFramework);
 
     function ViewFrameworkController($scope){
         $scope.config = {
             disableNavigation: false,
-            hideSidebar: false,
+            hideSidebar: true,
             hideTopbar: false,
             sidebar: 'full' //String:['full', 'mini']
         }

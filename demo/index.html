@@ -8,12 +8,16 @@
     <link rel="stylesheet" href="/styles/main.css"/>
 </head>
 <body>
-<qui-view-framework></qui-view-framework>
-<div ng-controller="AlterDemoCtrl">
-    <uib-alert type="info" close="close()">Well done! You successfully loaded the code.</uib-alert>
-    <uib-alert type="danger" close="close()">Well done! You successfully loaded the code.</uib-alert>
-    <uib-alert type="success" close="close()">Well done! You successfully loaded the code.</uib-alert>
-</div>
+<qui-view-framework>
+    <div class="sidebar" qui-resize>
+            <div class="sidebar-inner"></div>
+    </div>
+    <div class="main" ng-controller="AlterDemoCtrl">
+        <div uib-alert class="alert-info" type="info" close="close()">Well done! You successfully loaded the code.</div>
+        <div uib-alert class="alert-danger" type="danger" close="close()">Well done! You successfully loaded the code.</div>
+        <div uib-alert class="alert-success" type="success" close="close()">Well done! You successfully loaded the code.</div>
+    </div>
+</qui-view-framework>
 
 <script src="/bower_components/angular/angular.js"></script>
 <script src="/bower_components/angular-animate/angular-animate.js"></script>
@@ -26,6 +30,8 @@
             .controller('AlterDemoCtrl', function () {
 
             });
+
+
 </script>
 </body>
 </html>
