@@ -1,0 +1,41 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden; }
+
+.viewFramework {
+  width: 100%;
+  height: 100%;
+  overflow: hidden; }
+  .viewFramework-body {
+    position: absolute;
+    width: 100%;
+    top: 50px;
+    bottom: 0;
+    z-index: 100; }
+  .viewFramework-sidebar-full .viewFramework-sidebar {
+    width: 200px; }
+  .viewFramework-sidebar-mini .viewFramework-sidebar {
+    width: 50px; }
+
+.viewFramework-topbar, .viewFramework .topbar {
+  position: fixed;
+  width: 100%;
+  height: 50px;
+  overflow: hidden;
+  background-color: #00b3ee;
+  z-index: 100; }
+
+.viewFramework-sidebar {
+  position: fixed;
+  width: 200px;
+  top: 50px;
+  bottom: 0;
+  background-color: #222222;
+  z-index: 100; }
+
+.sidebar-fold {
+  color: #99cfe7;
+  text-align: center;
+  background-color: #111111;
+  cursor: pointer; }
