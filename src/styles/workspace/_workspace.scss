@@ -1,0 +1,46 @@
+.viewFramework{
+  &-workspace{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+.workspace{
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+
+  .sidebar{
+    position: relative;
+    width: 160px;
+    background-color: #EEEEEE;
+    border-right: 1px solid #DDDDDD;
+
+    &-inner{
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      //width: 150px;
+    }
+
+    .col-resize-handle{
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: -4px;
+      width: 8px;
+      //background-color: #111111;
+      cursor: col-resize;
+      z-index: 3;
+    }
+  }
+
+  .main{
+    flex: 1;
+  }
+}

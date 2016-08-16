@@ -24,6 +24,7 @@
   "homepage": "https://github.com/qianrenxi-ui/view-framework#readme",
   "devDependencies": {
     "browser-sync": "^2.13.0",
+    "del": "^2.2.1",
     "gulp": "^3.9.1",
     "gulp-angular-templatecache": "^1.8.0",
     "gulp-concat": "^2.6.0",
