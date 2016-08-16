@@ -13,6 +13,7 @@
 
     function QuiTopbar() {
         return {
+            restrict: 'AE',
             templateUrl: function (element, attrs) {
                 return attrs.templateUrl || 'qui/templates/topbar/topbar.html';
             },

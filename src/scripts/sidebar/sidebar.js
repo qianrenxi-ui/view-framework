@@ -29,6 +29,7 @@
 
     function QuiSidebar() {
         return {
+            restrict: 'AE',
             controller: 'QuiSidebarController',
             controllerAs: 'quiSidebarCtrl',
             templateUrl: function (element, attrs) {

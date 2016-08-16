@@ -20,6 +20,7 @@
 
     function QuiViewFramework(){
         return {
+            restrict: 'AE',
             controller: 'QuiViewFrameworkController',
             controllerAs: 'viewFramework',
             templateUrl: function(element, attrs){

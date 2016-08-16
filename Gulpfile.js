@@ -15,7 +15,7 @@ gulp.task('templates', function () {
     return gulp.src('src/templates/**/*.html')
         .pipe($p.ngHtml2js({
             moduleName: function (file) {
-                var pathParts = file.path.split('/');
+                var pathParts = file.path.replace(/\\/g, '/').split('/');
                 var folder = pathParts[pathParts.length - 2];
                 if (folder === "view-framework") {
                     return "qui.viewFramework";
@@ -51,7 +51,8 @@ gulp.task('serve:demo', ['styles', 'scripts'], function () {
 
     gulp.watch([
         'demo/**/*',
-        'src/**/*'
+        'src/**/*',
+        '.tmp/**/*'
     ]).on('change', reload);
 
     gulp.watch('src/styles/**/*.scss', ['styles']);
